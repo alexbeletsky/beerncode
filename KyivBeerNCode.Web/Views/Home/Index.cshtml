@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Kyiv Beer && Code";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using Microsoft.Web.Helpers;
+
+<div class="container_12">
+<section>
+    <div id="logo" class="grid_12">
+        <span class="big"><span class="quote">{</span> Пиво && Код <span class="quote">}</span></span>
+    </div>
+</section>
+<section>
+    <article class="grid_4 alpha">
+        <h1>Що це?</h1>
+        <p>
+        Це, зустрічи програмістів, що відбуваются раз на 2 тижні в Київі. Немає критеріїв, щодо мови програмування, або технологій. Головний критерій це любов до двох речей - кодування, та пива.
+        </p>
+    </article>
+    <article class="grid_4">
+        <h1>Навіщо мені це?</h1>
+        <p>
+        Якщо Ви зацікавленна людина, прагнете високих цілей у розробці. Або Ви давно маєте ідею, для реалізації. Чи просто бажаєте поспілкуватись з колегами про актуальні для Вас питання.
+        </p>
+    </article>
+    <article class="grid_4 omega">
+        <h1>Як приеднатися?</h1>
+        <p>
+        Анонси зустрічей Ви легко знайдете в нашому каналі в <a href="http://twitter.com">твіттері</a>, та на в групі на <a href="http://facebook.com">фейсбуці</a>. Якщо у Вас виникають будь-які питання, щодо зустрічей, та пропозиції, пишить ца <a href="#">цю</a> адресу.
+        </p>
+    </article>
+</section>
+
+<div class="social grid_12">
+    <div class="clearfix">
+        @Twitter.TweetButton(dataCount: "none", relatedUsername: "kyivbeerncode")
+    </div>
+    <div class="clearfix">
+        @Facebook.LikeButton(showFaces: false, width: 200, height: 30, colorScheme: "dark")
+    </div>
+</div>
+</div>
