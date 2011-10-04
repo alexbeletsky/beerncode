@@ -73,6 +73,7 @@ nav a.active
     
     -webkit-box-shadow: 0px 3px 15px #1e314f;
     -moz-box-shadow: 0px 3px 15px #1e314f;
+    -ms-box-shadow: 0px 3px 15px #1e314f;
     box-shadow: 0px 3px 15px #1e314f;
 
 }
@@ -100,8 +101,7 @@ nav a.active
     height: 100%;
     display: inline-block;
     
-    text-shadow: 0px 0px 25px #5281ba;
-    filter: dropshadow(color=#5281ba, offx=0, offy=0);
+    text-shadow: 0px 0px 25px #5281ba;    
 }
 
 #logo .big 
