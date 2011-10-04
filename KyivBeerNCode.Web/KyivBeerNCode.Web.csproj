@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="Content\960.css" />
     <Content Include="Content\beerncode.css" />
+    <Content Include="Content\Images\back.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Release Notes - Microsoft.Web.Helpers.txt" />

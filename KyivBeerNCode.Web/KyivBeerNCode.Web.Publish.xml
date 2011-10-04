@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://173.248.182.102:1028" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="True" userName="seekeyftp" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaSkNW7EPZk+tfFx4iVy2EwAAAAACAAAAAAAQZgAAAAEAACAAAAC+O5h3TnEGTRWaekk6ZQUvHt3ms4izTe+hlI8jWoZnxAAAAAAOgAAAAAIAACAAAAAQPhC7h4Ybfz9XdYuXXBcD1ciGPRBORMLvmvntjJkOdCAAAAAaAygOWK9E0NbR7u2iLZz/NR5+M4JSKQN5FpS3kwHi9kAAAABL0kv43ZSZaWgF8SkZIecjhgyUMjl885wcYUQU4qjQrgRXZRa06ZM0Z3yuU7roVms9mpEbXSS6glRqXTAMA+pF" SelectedForPublish="True">
+    <file relUrl="bin/KyivBeerNCode.Web.pdb" publishTime="10/04/2011 10:21:14" />
+    <file relUrl="Scripts/jquery-1.4.4-vsdoc.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Content/beerncode.css" publishTime="09/18/2011 14:25:05" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.unobtrusive-ajax.min.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Views/Shared/Error.cshtml" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.validate.min.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Global.asax" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Release Notes - Microsoft.Web.Helpers.txt" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Scripts/jquery.validate.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery-1.4.4.min.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="packages.config" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="10/04/2011 09:35:14" />
+    <file relUrl="Scripts/jquery-1.4.4.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.validate.unobtrusive.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Content/960.css" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="09/18/2011 19:07:26" />
+    <file relUrl="Scripts/jquery-ui.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="bin/Microsoft.Web.Helpers.dll" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Content/Images/back.jpg" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Scripts/jquery-ui.min.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Content/Site.css" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="09/17/2011 21:38:27" />
+    <file relUrl="Views/Web.config" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.unobtrusive-ajax.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="Scripts/jquery.validate.unobtrusive.min.js" publishTime="09/17/2011 21:38:28" />
+    <file relUrl="bin/KyivBeerNCode.Web.dll" publishTime="10/04/2011 10:21:14" />
+    <file relUrl="Web.config" publishTime="10/04/2011 10:17:29" />
+  </publishProfile>
+</publishData>
