@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KyivBeerNCode.Web", "KyivBeerNCode.Web\KyivBeerNCode.Web.csproj", "{720516E8-7CF5-45CA-A74A-F6C7288ECD80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.API", "BlogEngine\Github.API\Github.API.csproj", "{4312D54A-D7E5-407F-9BFB-27AF1E24396A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.API.Tests", "BlogEngine\Github.API.Tests\Github.API.Tests.csproj", "{408D9CBA-3AF9-4F01-B8E8-5DCFD2C53A5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E56B9095-F5F8-478E-9B8D-E6797F807088}"
+	ProjectSection(SolutionItems) = preProject
+		KyivBeerNCode.vsmdi = KyivBeerNCode.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.BlogEngine", "BlogEngine\Github.BlogEngine\Github.BlogEngine.csproj", "{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.BlogEngine.Tests", "BlogEngine\Github.BlogEngine.Tests\Github.BlogEngine.Tests.csproj", "{0263CE31-EF4A-46B9-9E58-BEC26BEC5DEE}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = KyivBeerNCode.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -13,8 +31,27 @@ Global
 		{720516E8-7CF5-45CA-A74A-F6C7288ECD80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{720516E8-7CF5-45CA-A74A-F6C7288ECD80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{720516E8-7CF5-45CA-A74A-F6C7288ECD80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4312D54A-D7E5-407F-9BFB-27AF1E24396A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4312D54A-D7E5-407F-9BFB-27AF1E24396A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4312D54A-D7E5-407F-9BFB-27AF1E24396A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4312D54A-D7E5-407F-9BFB-27AF1E24396A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408D9CBA-3AF9-4F01-B8E8-5DCFD2C53A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408D9CBA-3AF9-4F01-B8E8-5DCFD2C53A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408D9CBA-3AF9-4F01-B8E8-5DCFD2C53A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408D9CBA-3AF9-4F01-B8E8-5DCFD2C53A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0263CE31-EF4A-46B9-9E58-BEC26BEC5DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0263CE31-EF4A-46B9-9E58-BEC26BEC5DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0263CE31-EF4A-46B9-9E58-BEC26BEC5DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0263CE31-EF4A-46B9-9E58-BEC26BEC5DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = TestExisting: ;ModelFromScratch: 
 	EndGlobalSection
 EndGlobal

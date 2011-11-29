@@ -1,0 +1,13 @@
+﻿@using PagedList
+
+@model PagedList<Github.BlogEngine.Models.Post>
+
+@foreach (var post in Model)
+{
+    //@Html.ActionLink(post.Title, "Post", "Blog", new { sha = post.Sha });
+    
+    <br/>
+    <a href="@Url.Action("Post","Blog",new {sha = post.Sha})">@post.Title</a> 
+        <div style="background: white; color:Black;">
+            @Html.Raw(post.HtmlContent)</div>
+}

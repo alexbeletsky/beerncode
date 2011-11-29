@@ -17,12 +17,14 @@ namespace KyivBeerNCode.Web {
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("BlogPosts", "Blog/Posts/{page}", new { controller = "Blog", action = "Posts", page = 1});
+            routes.MapRoute("BlogPost", "Blog/Post/{sha}", new { controller = "Blog", action = "Post" });
+
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
-
         }
 
         protected void Application_Start() {
