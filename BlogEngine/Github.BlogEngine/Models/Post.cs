@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Github.API;
 using Github.API.Model;
@@ -29,6 +30,7 @@ namespace Github.BlogEngine.Models
             {
                 if (string.IsNullOrEmpty(_title))
                 {
+                    // todo: create a class with parsing and initialization logic
                     try
                     {
                         var htmlTitlt =
@@ -51,11 +53,6 @@ namespace Github.BlogEngine.Models
         {
             get
             {
-                if (string.IsNullOrEmpty(_htmlContent))
-                {
-                    var adapter = new Adapter();
-                    _htmlContent = adapter.GetBlobsRawData(GitHubUserSettings.UserName, GitHubUserSettings.Repository, Sha);
-                }
                 return _htmlContent;
             }
             set { _htmlContent = value; }
@@ -69,5 +66,36 @@ namespace Github.BlogEngine.Models
             return titleWithoutPunctuation.ToLower().Trim().Replace(" ", "-");
         }
 
+    }
+
+    public  class PostInitializer 
+    {
+        
+        public static Post Initialize(string path, string sha)
+        {
+            var adapter = new Adapter();
+            var blob = adapter.GetBlob(GitHubUserSettings.UserName, GitHubUserSettings.Repository, sha, path);
+            var post = new Post(blob);
+            return post;
+        }
+
+        internal static IEnumerable<Post> Initialize(IEnumerable<string> paths, string sha)
+        {
+            return paths.Select(path => Initialize(path, sha));
+        }
+
+        internal static IEnumerable<Post> InitializePagePosts(IEnumerable<string> paths, string sha, int page, int pageSize)
+        {
+            List<Post> posts = new List<Post>();
+            //todo: should be refactored (find a more clear and right way)
+            //a hack, so that to pass a partially initialized list to PagedList in the controller
+            var itemsBefore = paths.Take((page - 1)*pageSize);
+            var itemsToInitialize =  paths.Skip((page - 1)*pageSize).Take(pageSize);
+            var itemsAfter = paths.Skip((page - 1)*pageSize + pageSize);
+            posts.AddRange(itemsBefore.Select(path => new Post( ){Path = path}));
+            posts.AddRange(Initialize(itemsToInitialize, sha));
+            posts.AddRange(itemsAfter.Select(path=> new Post( ){Path = path}));
+            return posts;
+        }
     }
 }

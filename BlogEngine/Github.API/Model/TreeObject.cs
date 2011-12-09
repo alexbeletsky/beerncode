@@ -7,9 +7,6 @@ namespace Github.API.Model
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("size")]
-        public int Size { get; set; }
-
         [JsonProperty("sha")]
         public string Sha { get; set; }
 

@@ -8,5 +8,6 @@ namespace Github.BlogEngine.Repositories {
         Post GetPost(string path, string treeSha);
         Post GetPostBySha(string sha);
         Post GetPostByUrl(string url);
+        IEnumerable<Post> GetPagedPosts(int page, int pageSize);
     }
 }

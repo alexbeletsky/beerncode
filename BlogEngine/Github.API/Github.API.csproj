@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter.cs" />
+    <Compile Include="Model\BlobsAll.cs" />
     <Compile Include="Model\Blob.cs" />
     <Compile Include="Model\BlobObject.cs" />
     <Compile Include="Model\Blobs.cs" />
