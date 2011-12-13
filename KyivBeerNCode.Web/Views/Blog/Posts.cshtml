@@ -7,15 +7,19 @@
 <div style="float: right; width: 80%">
     @Html.Partial("PostList", (PagedList<Github.BlogEngine.Models.Post>)Model)
 
-    <div style="display: inline">
-    @Html.PagedListPager((PagedList<Github.BlogEngine.Models.Post>)Model, page => Url.Action("Posts", new { page }),
-    new PagedListRenderOptions
-        {
-            LinkToFirstPageFormat = "<< Перша",
-            LinkToPreviousPageFormat = "< Попередня",
-            LinkToNextPageFormat = "Наступна >",
-            LinkToLastPageFormat = "Остання >>"
-        })
+    <div style="display: inline; float: right">
+    @Html.PagedListPager((PagedList<Github.BlogEngine.Models.Post>)Model, page => Url.Action("Posts", new { page }), //PagedListRenderOptions.Minimal
+            new PagedListRenderOptions
+                {
+                    LinkToNextPageFormat = "Наступна >",
+                    DisplayEllipsesWhenNotShowingAllPageNumbers = false,
+                    DisplayLinkToFirstPage = false,
+                    DisplayLinkToLastPage = false,
+                    DisplayLinkToPreviousPage = false,
+                    MaximumPageNumbersToDisplay = null,
+                    FunctionToDisplayEachPageNumber = page => ""
+                }
+        )
     </div>
 
 </div>
