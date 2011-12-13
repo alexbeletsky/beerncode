@@ -20,6 +20,7 @@ namespace Github.BlogEngine.Models
             Path = blob.Name;
             Name = blob.Name;
             HtmlContent = blob.Data;
+            Body = HtmlContent.GetBody();
             Sha = blob.Sha;
             Url = CreatePostUrl(Title);
         }
@@ -33,10 +34,10 @@ namespace Github.BlogEngine.Models
                     // todo: create a class with parsing and initialization logic
                     try
                     {
-                        var htmlTitlt =
+                        var htmlTitle =
                             HtmlContent.Substring(HtmlContent.IndexOf("<title>") + "<title>".Length,
                             HtmlContent.IndexOf("</title>") - HtmlContent.IndexOf("<title>") - "<title>".Length);
-                        _title = htmlTitlt;
+                        _title = htmlTitle;
                     }
                     catch {
                         _title = "No title";                    
@@ -57,6 +58,13 @@ namespace Github.BlogEngine.Models
             }
             set { _htmlContent = value; }
         }
+
+        public string Body
+        {
+            get;
+            set;
+        }
+
         public DateTime CreatedDate { get; set; }
 
         public string Url { get; set; }
@@ -96,6 +104,14 @@ namespace Github.BlogEngine.Models
             posts.AddRange(Initialize(itemsToInitialize, sha));
             posts.AddRange(itemsAfter.Select(path=> new Post( ){Path = path}));
             return posts;
+        }
+    }
+
+    static class HtmlExtensision
+    {
+        public static string GetBody(this string html)
+        {
+            return html.Substring(html.IndexOf("<body") + "<body>".Length, html.IndexOf("</body>") - html.IndexOf("<body>") - "<body>".Length);
         }
     }
 }

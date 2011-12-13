@@ -145,4 +145,18 @@ footer p
 {
     float: right;    
 }
-    
+   
+.blogpost 
+{
+}
+
+.blogpost p
+{
+    margin-bottom: 0.7em;
+}
+
+.blogpost h1 a, .blogpost h1 a:visited
+{
+    color: #c2c2c2;
+    text-decoration:none;
+}

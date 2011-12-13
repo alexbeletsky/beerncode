@@ -59,7 +59,7 @@ namespace Github.BlogEngine.Repositories
         public Post GetPostBySha(string sha)
         {
             var data = GitAdapter.GetBlobsRawData(GitHubUserSettings.UserName, GitHubUserSettings.Repository, sha);
-            return new Post{HtmlContent = data};
+            return new Post{HtmlContent = data, Body = data.GetBody()};
         }
 
         public Post GetPostByUrl(string url) {

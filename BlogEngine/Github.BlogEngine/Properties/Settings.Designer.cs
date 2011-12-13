@@ -34,15 +34,6 @@ namespace Github.BlogEngine.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("blog.beletsky.net")]
-        public string GitUserRepository {
-            get {
-                return ((string)(this["GitUserRepository"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("master")]
         public string GitRepositoryBranch {
             get {
@@ -56,6 +47,15 @@ namespace Github.BlogEngine.Properties {
         public string TreeSha {
             get {
                 return ((string)(this["TreeSha"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("blog.kyivbeerncode.org")]
+        public string GitUserRepository {
+            get {
+                return ((string)(this["GitUserRepository"]));
             }
         }
     }

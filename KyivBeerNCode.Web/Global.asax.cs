@@ -17,8 +17,8 @@ namespace KyivBeerNCode.Web {
         public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("BlogPosts", "Blog/Posts/{page}", new { controller = "Blog", action = "Posts", page = 1});
-            routes.MapRoute("BlogPost", "Blog/Post/{sha}", new { controller = "Blog", action = "Post" });
+            routes.MapRoute("BlogPosts", "blog/{page}", new { controller = "Blog", action = "Posts", page = 1});
+            routes.MapRoute("BlogPost", "blog/post/{sha}", new { controller = "Blog", action = "Post" });
 
             routes.MapRoute(
                 "Default", // Route name

@@ -12,7 +12,10 @@ namespace Github.API
         private string GetDataFromGitHub(string url)
         {
             using (var webClient = new WebClient())
+            {
+                webClient.Encoding = System.Text.Encoding.UTF8;
                 return webClient.DownloadString(url);
+            }
         }
 
         public BlobsAll GetBlobAll(string username, string repo, string branch, string sha) {

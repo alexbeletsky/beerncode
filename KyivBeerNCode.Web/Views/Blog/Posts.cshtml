@@ -1,8 +1,28 @@
 ﻿@{
-    ViewBag.Title = "Blog";
+    ViewBag.Title = "Kyiv Beer && Code | Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
 }
+
 @using PagedList;
 @using PagedList.Mvc;
+
+<div class="container_12">
+    <div class="grid_12">
+        @foreach (var post in Model)
+        {
+            <article class="blogpost">
+                <h1>
+                    <a href="@Url.Action("Post","Blog",new {sha = post.Sha})">@post.Title</a> 
+                </h1>
+                <section>
+                    @Html.Raw(post.Body)
+                </section>
+            </article>
+        }
+    </div>
+</div>
+
+@*
 <h1>Blog</h1>
 <div style="float: right; width: 80%">
     @Html.Partial("PostList", (PagedList<Github.BlogEngine.Models.Post>)Model)
@@ -21,5 +41,5 @@
                 }
         )
     </div>
-
 </div>
+*@
