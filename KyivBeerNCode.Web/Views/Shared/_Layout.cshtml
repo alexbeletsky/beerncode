@@ -16,8 +16,8 @@
         <header class="clearfix">
             <nav class="container_12">
                 <ul>
-                    <li><a href="@Url.Action("Index","Home")" class="active">головна</a></li>
-                    <li><a href="@Url.Action("Posts","Blog")">блог</a></li>                    
+                    <li>@Html.MenuLink("головна", "Index", "Home")</li>
+                    <li>@Html.MenuLink("блог", "Posts", "Blog")</li>                    
                     <li><a href="#">проекти</a></li>
                     <li><a href="#">люди</a></li>
                     <li><a href="#">календар</a></li>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Github.API;
-using Github.API.Model;
 using Github.BlogEngine.Models;
 
 namespace Github.BlogEngine.Repositories
