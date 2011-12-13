@@ -5,14 +5,14 @@
     <Setting Name="GitUserName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">alexanderbeletsky</Value>
     </Setting>
-    <Setting Name="GitUserRepository" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">blog.beletsky.net</Value>
-    </Setting>
     <Setting Name="GitRepositoryBranch" Type="System.String" Scope="Application">
       <Value Profile="(Default)">master</Value>
     </Setting>
     <Setting Name="TreeSha" Type="System.String" Scope="Application">
       <Value Profile="(Default)">74d474ba69c0ee98229342b34ce9ac48a58869bc</Value>
+    </Setting>
+    <Setting Name="GitUserRepository" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">blog.kyivbeerncode.org</Value>
     </Setting>
   </Settings>
 </SettingsFile>

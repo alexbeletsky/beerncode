@@ -5,11 +5,6 @@ using Newtonsoft.Json;
 
 namespace Github.API
 {
-    public class BlobsAll {
-        [JsonProperty("blobs")]
-        public IDictionary<string, string> Blobs { get; set; }
-    }
-
     public class Adapter
     {
         private static readonly string ApiUrl = "http://github.com/api/v2/";
@@ -17,10 +12,13 @@ namespace Github.API
         private string GetDataFromGitHub(string url)
         {
             using (var webClient = new WebClient())
+            {
+                webClient.Encoding = System.Text.Encoding.UTF8;
                 return webClient.DownloadString(url);
+            }
         }
 
-        public BlobsAll GetBlobAll(string username, string repo, string branch) {
+        public BlobsAll GetBlobAll(string username, string repo, string branch, string sha) {
             var url = string.Format("{0}json/blob/all/{1}/{2}/{3}", ApiUrl, username, repo, branch);
 
             return JsonConvert.DeserializeObject<BlobsAll>(GetDataFromGitHub(url));            

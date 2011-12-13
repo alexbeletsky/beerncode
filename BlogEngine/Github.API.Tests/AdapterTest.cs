@@ -1,5 +1,6 @@
 ﻿using System.Configuration;
 using System.Net;
+using Github.API.Model;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -94,8 +95,9 @@ namespace Github.API.Tests
         [TestMethod]
         public void GetBlobAll() {
             var adapter = new Adapter();
-            var blobAll = adapter.GetBlobAll(username, repository, branch + "/2011");
-          
+            var blobAll = adapter.GetBlobAll(username, repository, branch,treeSha);
+
+            var r =  blobAll.GetHtmlFiles();
         }
 
     }

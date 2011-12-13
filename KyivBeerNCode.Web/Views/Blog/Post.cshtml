@@ -5,20 +5,17 @@
 @{
     ViewBag.Title = @Model.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var textForTeet = string.Format("{0} {1}",Model.Title,Request.Url.AbsoluteUri);
 }
 
-<h2>@Model.Title</h2>
-
-<div>
-    @Html.Raw(Model.HtmlContent)
-</div>
-
-<div class="social grid_12">
-    <div>
-        @Twitter.TweetButton(dataCount: "none", relatedUsername: "kyivbeerncode", tweetText:  textForTeet)
-    </div>
-    <div>
-        @Facebook.LikeButton(showFaces: false, width: 200, height: 30, colorScheme: "dark")
+<div class="container_12">
+    <div class="grid_12">
+        <article class="blogpost">
+            <h1>
+                @Model.Title
+            </h1>
+            <section>
+                @Html.Raw(Model.Body)
+            </section>
+        </article>
     </div>
 </div>

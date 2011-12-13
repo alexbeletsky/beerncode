@@ -35,6 +35,5 @@ namespace Github.BlogEngine
             return int.TryParse(treeObject.Name, out i);
         }
 
-
     }
 }
