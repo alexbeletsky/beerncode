@@ -16,8 +16,13 @@
         <header class="clearfix">
             <nav class="container_12">
                 <ul>
+<<<<<<< HEAD
+                    <li><a href="/" class="active">головна</a></li>
+                    <li><a href="/blog">блог</a></li>                    
+=======
                     <li>@Html.MenuLink("головна", "Index", "Home")</li>
                     <li>@Html.MenuLink("блог", "Posts", "Blog")</li>                    
+>>>>>>> ab8d1bc... Add extension from SO for selecting active menu item
                     <li><a href="#">проекти</a></li>
                     <li><a href="#">люди</a></li>
                     <li><a href="#">календар</a></li>
