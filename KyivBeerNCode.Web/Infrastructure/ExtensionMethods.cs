@@ -14,7 +14,7 @@ namespace KyivBeerNCode.Web.Infrastructure
 		{
 			string currentAction = htmlHelper.ViewContext.RouteData.GetRequiredString("action");
 			string currentController = htmlHelper.ViewContext.RouteData.GetRequiredString("controller");
-			if (actionName == currentAction && controllerName == currentController)
+			if (controllerName == currentController)
 			{
 				return htmlHelper.ActionLink(
 					linkText,
