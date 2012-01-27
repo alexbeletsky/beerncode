@@ -1,45 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="ftp://173.248.182.102:1028" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="True" userName="seekeyftp" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaSkNW7EPZk+tfFx4iVy2EwAAAAACAAAAAAAQZgAAAAEAACAAAAC+O5h3TnEGTRWaekk6ZQUvHt3ms4izTe+hlI8jWoZnxAAAAAAOgAAAAAIAACAAAAAQPhC7h4Ybfz9XdYuXXBcD1ciGPRBORMLvmvntjJkOdCAAAAAaAygOWK9E0NbR7u2iLZz/NR5+M4JSKQN5FpS3kwHi9kAAAABL0kv43ZSZaWgF8SkZIecjhgyUMjl885wcYUQU4qjQrgRXZRa06ZM0Z3yuU7roVms9mpEbXSS6glRqXTAMA+pF" SelectedForPublish="True">
-    <file relUrl="Views/Blog/Post.cshtml" publishTime="12/13/2011 21:31:28" />
+    <file relUrl="Views/Blog/Post.cshtml" publishTime="01/27/2012 13:45:00" />
     <file relUrl="bin/Ninject.Web.Mvc.xml" publishTime="11/29/2011 20:42:50" />
+    <file relUrl="bin/KyivBeerNCode.Web.pdb" publishTime="01/27/2012 13:28:06" />
     <file relUrl="Scripts/jquery-1.4.4-vsdoc.js" publishTime="11/29/2011 20:42:49" />
-    <file relUrl="Content/beerncode.css" publishTime="12/14/2011 09:19:01" />
+    <file relUrl="Content/beerncode.css" publishTime="01/27/2012 13:15:16" />
+    <file relUrl="bin/Github.API.pdb" publishTime="01/27/2012 12:43:30" />
     <file relUrl="Views/_ViewStart.cshtml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="11/29/2011 20:42:49" />
-    <file relUrl="bin/KyivBeerNCode.Web.dll" publishTime="12/14/2011 09:44:25" />
-    <file relUrl="Views/Blog/PostList.cshtml" publishTime="12/13/2011 21:31:28" />
+    <file relUrl="bin/KyivBeerNCode.Web.dll" publishTime="01/27/2012 13:28:06" />
+    <file relUrl="bin/PagedList.dll" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/WebActivator.dll" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Views/Shared/Error.cshtml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Scripts/jquery.validate.min.js" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="bin/Github.BlogEngine.dll" publishTime="12/14/2011 09:44:24" />
+    <file relUrl="bin/Github.BlogEngine.dll" publishTime="01/27/2012 13:28:05" />
     <file relUrl="Global.asax" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="bin/Ninject.Web.Mvc.pdb" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Release Notes - Microsoft.Web.Helpers.txt" publishTime="11/29/2011 20:42:49" />
-    <file relUrl="bin/Github.API.dll" publishTime="12/14/2011 09:44:24" />
+    <file relUrl="bin/Github.API.dll" publishTime="01/27/2012 12:43:30" />
     <file relUrl="bin/PagedList.xml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/Ninject.Web.Mvc.dll" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Scripts/jquery.validate.js" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="Scripts/jquery-1.4.4.min.js" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="bin/Github.BlogEngine.pdb" publishTime="01/27/2012 13:28:05" />
     <file relUrl="packages.config" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="Views/Blog/Posts.cshtml" publishTime="12/13/2011 21:31:28" />
+    <file relUrl="Scripts/jquery.validate.unobtrusive.js" publishTime="11/29/2011 20:42:50" />
+    <file relUrl="Views/Blog/Posts.cshtml" publishTime="01/27/2012 13:43:30" />
     <file relUrl="Content/PagedList.css" publishTime="11/29/2011 20:42:49" />
     <file relUrl="Scripts/jquery-1.4.4.js" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="bin/Ninject.pdb" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Scripts/PagedList/PagedList.Mvc.Template.html" publishTime="11/29/2011 20:42:49" />
     <file relUrl="bin/Newtonsoft.Json.dll" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/PagedList.Mvc.dll" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="Scripts/jquery.validate.unobtrusive.js" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="Content/Site.css" publishTime="11/29/2011 20:42:49" />
-    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="12/14/2011 09:25:24" />
-    <file relUrl="bin/PagedList.dll" publishTime="11/29/2011 20:42:50" />
+    <file relUrl="Scripts/jquery-1.4.4.min.js" publishTime="11/29/2011 20:42:49" />
     <file relUrl="Scripts/jquery.unobtrusive-ajax.js" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="Content/Site.css" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="Views/Shared/_Layout.cshtml" publishTime="01/27/2012 13:00:49" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="11/29/2011 20:42:50" />
+    <file relUrl="Scripts/jquery.unobtrusive-ajax.min.js" publishTime="11/29/2011 20:42:49" />
     <file relUrl="Views/Home/Index.cshtml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/Ninject.xml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="bin/Microsoft.Web.Helpers.dll" publishTime="11/22/2011 23:12:20" />
     <file relUrl="Content/Images/back.jpg" publishTime="11/29/2011 20:42:49" />
     <file relUrl="bin/Microsoft.Web.Infrastructure.dll" publishTime="11/29/2011 20:42:50" />
-    <file relUrl="Scripts/jquery.unobtrusive-ajax.min.js" publishTime="11/29/2011 20:42:49" />
     <file relUrl="Scripts/jquery-ui.min.js" publishTime="11/29/2011 20:42:49" />
+    <file relUrl="Scripts/ga.js" publishTime="01/27/2012 13:00:33" />
     <file relUrl="bin/PagedList.Mvc.xml" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Content/960.css" publishTime="11/29/2011 20:42:49" />
     <file relUrl="bin/Ninject.dll" publishTime="11/29/2011 20:42:50" />
@@ -47,6 +53,6 @@
     <file relUrl="Scripts/jquery-ui.js" publishTime="11/29/2011 20:42:49" />
     <file relUrl="Scripts/jquery.validate.unobtrusive.min.js" publishTime="11/29/2011 20:42:50" />
     <file relUrl="Views/Web.config" publishTime="12/14/2011 09:24:26" />
-    <file relUrl="Web.config" publishTime="12/13/2011 17:57:00" />
+    <file relUrl="Web.config" publishTime="01/18/2012 10:54:38" />
   </publishProfile>
 </publishData>

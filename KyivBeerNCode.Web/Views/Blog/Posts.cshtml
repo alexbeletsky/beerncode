@@ -5,6 +5,7 @@
 
 @using PagedList;
 @using PagedList.Mvc;
+@model PagedList<Github.BlogEngine.Models.Post>
 
 <div class="container_12">
     <div class="grid_12">
@@ -17,29 +18,30 @@
                 <section>
                     @Html.Raw(post.Body)
                 </section>
+                <div class="comments">
+                        @{
+                            var disqusId = "disqus_id_" + post.Sha;
+                        }
+                        <a href="@Url.Action("Post", "Blog", new { sha = post.Sha })#disqus_thread" data-disqus-identifier="@disqusId"></a>
+                    </div>
+
             </article>
         }
     </div>
 </div>
 
-@*
-<h1>Blog</h1>
-<div style="float: right; width: 80%">
-    @Html.Partial("PostList", (PagedList<Github.BlogEngine.Models.Post>)Model)
+@section Scripts {
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'kyivbeercodecommunitysite'; // required: replace example with your forum shortname
 
-    <div style="display: inline; float: right">
-    @Html.PagedListPager((PagedList<Github.BlogEngine.Models.Post>)Model, page => Url.Action("Posts", new { page }), //PagedListRenderOptions.Minimal
-            new PagedListRenderOptions
-                {
-                    LinkToNextPageFormat = "Наступна >",
-                    DisplayEllipsesWhenNotShowingAllPageNumbers = false,
-                    DisplayLinkToFirstPage = false,
-                    DisplayLinkToLastPage = false,
-                    DisplayLinkToPreviousPage = false,
-                    MaximumPageNumbersToDisplay = null,
-                    FunctionToDisplayEachPageNumber = page => ""
-                }
-        )
-    </div>
-</div>
-*@
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        } ());
+    </script>
+}

@@ -98,6 +98,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Release Notes - Microsoft.Web.Helpers.txt" />
+    <Content Include="Scripts\ga.js" />
     <Content Include="Scripts\PagedList\PagedList.Mvc.js" />
     <Content Include="Scripts\PagedList\PagedList.Mvc.Template.html" />
     <Content Include="Web.config" />
@@ -141,9 +142,6 @@
       <Project>{6D4F437D-BA44-4FC5-8F3D-BA27E8C4F553}</Project>
       <Name>Github.BlogEngine</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Blog\PostList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Blog\Post.cshtml" />

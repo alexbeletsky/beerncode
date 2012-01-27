@@ -2,7 +2,6 @@
 
 namespace Github.API.Model
 {
-    //[JsonObject("blob")]
     public class BlobObject
     {
         [JsonProperty("name")]

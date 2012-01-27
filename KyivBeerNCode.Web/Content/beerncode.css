@@ -149,6 +149,7 @@ footer p
    
 .blogpost 
 {
+    padding: 1.2em 0.5em;
 }
 
 .blogpost p
@@ -156,8 +157,20 @@ footer p
     margin-bottom: 0.7em;
 }
 
+.blogpost h1
+{
+    padding-bottom: 0.7em; 
+}
+
 .blogpost h1 a, .blogpost h1 a:visited
 {
     color: #c2c2c2;
     text-decoration:none;
+}
+
+.blogpost .comments a
+{
+    color: #c2c2c2;    
+    text-decoration: underline;
+    float: right;    
 }
